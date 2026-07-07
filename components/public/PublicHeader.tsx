@@ -1,6 +1,6 @@
 import Link from "next/link";
+import { BrandLogo } from "./BrandLogo";
 import { navLinks } from "@/constants/siteContent";
-import { siteTheme } from "@/constants/siteTheme";
 
 export function PublicHeader() {
   return (
@@ -8,10 +8,7 @@ export function PublicHeader() {
       <div className="container">
         <div className="header-inner">
           <Link className="brand" href="/" aria-label="GuardRules home">
-            <span className="brand-mark" aria-hidden="true">
-              GR
-            </span>
-            <span>{siteTheme.brandName}</span>
+            <BrandLogo />
           </Link>
           <nav className="nav-links" aria-label="Primary navigation">
             {navLinks.map((link) => (

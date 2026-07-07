@@ -1,6 +1,6 @@
 import Link from "next/link";
+import { BrandLogo } from "./BrandLogo";
 import { footerLinks } from "@/constants/siteContent";
-import { siteTheme } from "@/constants/siteTheme";
 
 export function PublicFooter() {
   return (
@@ -8,10 +8,7 @@ export function PublicFooter() {
       <div className="container footer-inner">
         <div>
           <Link className="brand" href="/" aria-label="GuardRules home">
-            <span className="brand-mark" aria-hidden="true">
-              GR
-            </span>
-            <span>{siteTheme.brandName}</span>
+            <BrandLogo variant="footer" />
           </Link>
           <p className="footer-note">Protect your ad spend when inventory changes.</p>
         </div>

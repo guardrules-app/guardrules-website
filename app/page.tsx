@@ -20,7 +20,7 @@ export default function HomePage() {
   return (
     <PublicLayout>
       <HeroSection />
-      <StoreConnectSection />
+      {/* <StoreConnectSection /> */}
 
       <section className="section">
         <div className="container">
