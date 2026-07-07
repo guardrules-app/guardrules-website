@@ -102,7 +102,7 @@ export default function PrivacyPolicyPage() {
             <p>
               For privacy questions, contact us at:{" "}
               {/* TODO: Replace this support email if GuardRules uses a different privacy contact. */}
-              <a href="mailto:support@guardrules.app">support@guardrules.app</a>
+              <a href="mailto:support@guardrules.com">support@guardrules.com</a>
             </p>
           </PolicySection>
         </div>

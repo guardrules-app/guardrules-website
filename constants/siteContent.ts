@@ -22,7 +22,7 @@ export const footerLinks = [
   { label: "Features", href: "/features" },
   { label: "Pricing", href: "/pricing" },
   { label: "Privacy Policy", href: "/privacy-policy" },
-  { label: "Contact / Support", href: "mailto:support@guardrules.app" }
+  { label: "Contact / Support", href: "mailto:support@guardrules.com" }
 ] as const;
 
 export const heroBullets = [

@@ -20,7 +20,7 @@ const siteThemeVariables: SiteThemeVariables = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://guardrules.app"),
+  metadataBase: new URL("https://guardrules.com"),
   title: {
     default: "GuardRules",
     template: "%s"
