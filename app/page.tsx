@@ -7,7 +7,6 @@ import { HeroSection } from "@/components/public/HeroSection";
 import { PricingCard } from "@/components/public/PricingCard";
 import { PublicLayout } from "@/components/public/PublicLayout";
 import { SectionHeading } from "@/components/public/SectionHeading";
-import { StoreConnectSection } from "@/components/public/StoreConnectSection";
 import { coreFeatures, howItWorksSteps, landingFaqs, problemCards, useCases } from "@/constants/siteContent";
 import { plans } from "@/constants/pricing";
 

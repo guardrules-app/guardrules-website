@@ -1,16 +1,16 @@
 export const siteTheme = {
   brandName: "GuardRules",
   colors: {
-    primary: "#202223",
-    primaryDark: "#000000",
-    primaryLight: "#E1E3E5",
-    primarySoft: "#F6F6F7",
-    text: "#202223",
-    mutedText: "#6D7175",
-    border: "#DADBDD",
+    primary: "#4CBF3F",
+    primaryDark: "#063B6D",
+    primaryLight: "#BDECB5",
+    primarySoft: "#F0FAEF",
+    text: "#0A2942",
+    mutedText: "#587083",
+    border: "#D4E2EA",
     background: "#FFFFFF",
-    backgroundSoft: "#F6F6F7",
+    backgroundSoft: "#F5FAFD",
     card: "#FFFFFF",
-    shadow: "rgba(32, 34, 35, 0.08)"
+    shadow: "rgba(6, 59, 109, 0.1)"
   }
 } as const;

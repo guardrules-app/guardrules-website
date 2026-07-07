@@ -162,13 +162,13 @@ summary:focus-visible {
 }
 
 .button-primary {
-  background: var(--gr-primary);
+  background: var(--gr-primary-dark);
   color: white;
-  box-shadow: 0 8px 18px color-mix(in srgb, var(--gr-primary) 18%, transparent);
+  box-shadow: none;
 }
 
 .button-primary:hover {
-  background: var(--gr-primary-dark);
+  background: var(--gr-primary);
 }
 
 .button-secondary {
@@ -400,7 +400,7 @@ h1 {
   border: 1px solid var(--gr-border);
   border-radius: 8px;
   background: var(--gr-card);
-  box-shadow: 0 1px 0 rgba(32, 34, 35, 0.04);
+  box-shadow: 0 1px 0 color-mix(in srgb, var(--gr-primary-dark) 8%, transparent);
 }
 
 .feature-card {
