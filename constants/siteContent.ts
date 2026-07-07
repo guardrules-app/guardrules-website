@@ -11,18 +11,19 @@ export type FAQItem = {
   answer: ReactNode;
 };
 
+export const installHref = "https://app.guardrules.com";
+
 export const navLinks = [
   { label: "Features", href: "/features" },
   { label: "Pricing", href: "/pricing" },
-  { label: "Privacy", href: "/privacy-policy" }
+  { label: "Contact", href: "mailto:support@guardrules.com" }
 ] as const;
 
 export const footerLinks = [
   { label: "Home", href: "/" },
   { label: "Features", href: "/features" },
-  { label: "Pricing", href: "/pricing" },
   { label: "Privacy Policy", href: "/privacy-policy" },
-  { label: "Contact / Support", href: "mailto:support@guardrules.com" }
+  { label: "Terms of Service", href: "/terms-of-service" }
 ] as const;
 
 export const heroBullets = [

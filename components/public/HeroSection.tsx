@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { heroBullets } from "@/constants/siteContent";
+import { heroBullets, installHref } from "@/constants/siteContent";
 
 export function HeroSection() {
   return (
@@ -13,7 +13,7 @@ export function HeroSection() {
             promoting products that cannot sell.
           </p>
           <div className="hero-actions">
-            <Link className="button button-primary" href="#install-store">
+            <Link className="button button-primary" href={installHref}>
               Install GuardRules
             </Link>
             <Link className="button button-secondary" href="#how-it-works">

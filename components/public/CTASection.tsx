@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { installHref } from "@/constants/siteContent";
 
 type CTASectionProps = {
   title: string;
@@ -7,7 +8,7 @@ type CTASectionProps = {
   buttonHref?: string;
 };
 
-export function CTASection({ title, description, buttonLabel, buttonHref = "/#install-store" }: CTASectionProps) {
+export function CTASection({ title, description, buttonLabel, buttonHref = installHref }: CTASectionProps) {
   return (
     <section className="section">
       <div className="container">

@@ -10,8 +10,8 @@ export function BrandLogo({ variant = "header" }: BrandLogoProps) {
       className={`brand-logo brand-logo-${variant}`}
       src="/guardrules-logo.png"
       alt="GuardRules"
-      width={950}
-      height={340}
+      width={317}
+      height={94}
       priority={variant === "header"}
     />
   );

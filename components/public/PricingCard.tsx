@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { pricingCtas, type Plan } from "@/constants/pricing";
+import { installHref } from "@/constants/siteContent";
 
 type PricingCardProps = {
   plan: Plan;
@@ -27,7 +28,7 @@ export function PricingCard({ plan }: PricingCardProps) {
           <li key={feature}>{feature}</li>
         ))}
       </ul>
-      <Link className={`button ${isHighlighted ? "button-primary" : "button-secondary"}`} href="/#install-store">
+      <Link className={`button ${isHighlighted ? "button-primary" : "button-secondary"}`} href={installHref}>
         {pricingCtas[plan.name]}
       </Link>
     </article>

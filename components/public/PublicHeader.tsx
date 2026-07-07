@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { BrandLogo } from "./BrandLogo";
-import { navLinks } from "@/constants/siteContent";
+import { installHref, navLinks } from "@/constants/siteContent";
 
 export function PublicHeader() {
   return (
@@ -18,7 +18,7 @@ export function PublicHeader() {
             ))}
           </nav>
           <div className="header-actions">
-            <Link className="button button-primary" href="/#install-store">
+            <Link className="button button-primary" href={installHref}>
               Install App
             </Link>
           </div>
@@ -30,7 +30,7 @@ export function PublicHeader() {
                   {link.label}
                 </Link>
               ))}
-              <Link className="button button-primary" href="/#install-store">
+              <Link className="button button-primary" href={installHref}>
                 Install App
               </Link>
             </nav>

@@ -10,7 +10,7 @@ export function PublicFooter() {
           <Link className="brand" href="/" aria-label="GuardRules home">
             <BrandLogo variant="footer" />
           </Link>
-          <p className="footer-note">Protect your ad spend when inventory changes.</p>
+          {/* <p className="footer-note">Protect your ad spend when inventory changes.</p> */}
         </div>
         <nav className="footer-links" aria-label="Footer navigation">
           {footerLinks.map((link) => (
