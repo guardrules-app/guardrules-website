@@ -54,6 +54,10 @@ export const howItWorksSteps: FeatureItem[] = [
     copy: "Start the Shopify installation flow for your store."
   },
   {
+    title: "Connect Meta account",
+    copy: "Connect the Meta ad account you want GuardRules to protect with inventory-based actions."
+  },
+  {
     title: "Choose products",
     copy: "Apply guards to all products, selected products, or exclude specific products."
   },
