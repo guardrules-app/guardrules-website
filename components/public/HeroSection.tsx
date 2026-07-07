@@ -7,7 +7,7 @@ export function HeroSection() {
       <div className="container hero-grid">
         <div>
           <span className="eyebrow">Inventory-based Meta ad protection</span>
-          <h1>Protect your Shopify ad spend with inventory-based guard rules.</h1>
+          <h2>Protect your Shopify ad spend with inventory-based guard rules.</h2>
           <p className="hero-copy">
             GuardRules monitors your Shopify inventory and helps automate Meta ad actions, so you do not waste budget
             promoting products that cannot sell.

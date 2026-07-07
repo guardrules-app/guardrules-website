@@ -9,7 +9,7 @@ export function PublicLayout({ children }: PublicLayoutProps) {
   return (
     <div className="page-shell">
       <PublicHeader />
-      <main>{children}</main>
+      <main className="page-main">{children}</main>
       <PublicFooter />
     </div>
   );

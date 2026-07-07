@@ -16,7 +16,7 @@ export const installHref = "https://app.guardrules.com";
 export const navLinks = [
   { label: "Features", href: "/features" },
   { label: "Pricing", href: "/pricing" },
-  { label: "Contact", href: "mailto:support@guardrules.com" }
+  { label: "Contact", href: "/contact" }
 ] as const;
 
 export const footerLinks = [

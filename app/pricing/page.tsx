@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
-import { FAQSection } from "@/components/public/FAQSection";
 import { PricingCard } from "@/components/public/PricingCard";
 import { PublicLayout } from "@/components/public/PublicLayout";
-import { SectionHeading } from "@/components/public/SectionHeading";
-import { comparisonRows, plans } from "@/constants/pricing";
-import { pricingFaqs } from "@/constants/siteContent";
+import { plans } from "@/constants/pricing";
 
 export const metadata: Metadata = {
   title: "Pricing — GuardRules",
@@ -16,12 +13,39 @@ export default function PricingPage() {
   return (
     <PublicLayout>
       <section className="hero">
-        <div className="container">
-          <span className="eyebrow">Pricing</span>
-          <h1>Simple pricing for every Shopify store.</h1>
-          <p className="hero-copy">
-            Start free, then upgrade when you need more guard rules for your store. Prices are in USD/month.
-          </p>
+        <div className="container hero-grid">
+          <div>
+            <span className="eyebrow">Pricing</span>
+            <h2>Simple pricing for every Shopify store.</h2>
+            <p className="hero-copy">
+              Start free, then upgrade when you need more guard rules for your store. Prices are in USD/month.
+            </p>
+          </div>
+          <div className="hero-panel" aria-label="GuardRules pricing summary">
+            <div className="automation-card">
+              <div className="automation-row">
+                <div>
+                  <div className="automation-label">Free</div>
+                  <div className="automation-value">1 guard included</div>
+                </div>
+                <span className="status-pill">$0/mo</span>
+              </div>
+              <div className="automation-row">
+                <div>
+                  <div className="automation-label">Starter</div>
+                  <div className="automation-value">5 guards for small stores</div>
+                </div>
+                <span className="status-pill">$4.99/mo</span>
+              </div>
+              <div className="automation-row">
+                <div>
+                  <div className="automation-label">Advanced</div>
+                  <div className="automation-value">20 guards for growing stores</div>
+                </div>
+                <span className="status-pill">$12.99/mo</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -39,7 +63,7 @@ export default function PricingPage() {
         </div>
       </section>
 
-      <section className="section">
+      {/* <section className="section">
         <div className="container">
           <SectionHeading title="Compare plans" description="Every plan includes the essentials for Shopify inventory monitoring and Meta ad automation." />
           <div className="comparison">
@@ -67,7 +91,7 @@ export default function PricingPage() {
         </div>
       </section>
 
-      <FAQSection faqs={pricingFaqs} title="Pricing FAQ" />
+      <FAQSection faqs={pricingFaqs} title="Pricing FAQ" /> */}
     </PublicLayout>
   );
 }

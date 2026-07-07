@@ -1,14 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { CTASection } from "@/components/public/CTASection";
 import { FAQSection } from "@/components/public/FAQSection";
 import { FeatureCard } from "@/components/public/FeatureCard";
 import { HeroSection } from "@/components/public/HeroSection";
-import { PricingCard } from "@/components/public/PricingCard";
 import { PublicLayout } from "@/components/public/PublicLayout";
 import { SectionHeading } from "@/components/public/SectionHeading";
-import { coreFeatures, howItWorksSteps, landingFaqs, problemCards, useCases } from "@/constants/siteContent";
-import { plans } from "@/constants/pricing";
+import { howItWorksSteps, landingFaqs } from "@/constants/siteContent";
 
 export const metadata: Metadata = {
   title: "GuardRules — Inventory-Based Ad Protection for Shopify Stores",
@@ -20,7 +17,7 @@ export default function HomePage() {
     <PublicLayout>
       <HeroSection />
       {/* <StoreConnectSection /> */}
-
+{/* 
       <section className="section">
         <div className="container">
           <SectionHeading
@@ -33,7 +30,7 @@ export default function HomePage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="section" id="how-it-works">
         <div className="container">
@@ -49,7 +46,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section">
+      {/* <section className="section">
         <div className="container">
           <SectionHeading
             title="Core features for Shopify merchants"
@@ -61,9 +58,9 @@ export default function HomePage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className="section">
+      {/* <section className="section">
         <div className="container">
           <SectionHeading
             title="Built for everyday inventory moments"
@@ -75,9 +72,10 @@ export default function HomePage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className="section">
+      <FAQSection faqs={landingFaqs} />
+            <section className="section">
         <div className="container pricing-preview">
           <div className="pricing-row">
             <div>
@@ -92,20 +90,18 @@ export default function HomePage() {
               View pricing
             </Link>
           </div>
-          <div className="grid pricing-cards" style={{ marginTop: 24 }}>
+          {/* <div className="grid pricing-cards" style={{ marginTop: 24 }}>
             {plans.map((plan) => (
               <PricingCard key={plan.name} plan={plan} />
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
-
-      <FAQSection faqs={landingFaqs} />
-      <CTASection
+      {/* <CTASection
         title="Protect your ad spend when inventory changes."
         description="Install GuardRules, create your first guard, and keep Meta ad traffic away from unavailable products."
         buttonLabel="Install GuardRules"
-      />
+      /> */}
     </PublicLayout>
   );
 }

@@ -42,10 +42,16 @@ input {
 }
 
 .page-shell {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   background:
     radial-gradient(circle at top left, color-mix(in srgb, var(--gr-primary-light) 55%, transparent), transparent 32rem),
     linear-gradient(180deg, var(--gr-bg), var(--gr-bg-soft) 44%, var(--gr-bg));
+}
+
+.page-main {
+  flex: 1;
 }
 
 .container {
@@ -214,11 +220,12 @@ p {
   margin-top: 0;
 }
 
-h1 {
+h1,
+.hero h2 {
   margin-bottom: 20px;
   max-width: 860px;
-  font-size: clamp(2.55rem, 6vw, 4.7rem);
-  line-height: 0.98;
+  font-size: clamp(2.35rem, 5vw, 4.1rem);
+  line-height: 1.04;
   letter-spacing: 0;
 }
 
@@ -332,8 +339,8 @@ h1 {
 
 .section-heading h2 {
   margin-bottom: 12px;
-  font-size: clamp(2rem, 4vw, 3.1rem);
-  line-height: 1.05;
+  font-size: clamp(2rem, 3.4vw, 2.9rem);
+  line-height: 1.08;
   letter-spacing: 0;
 }
 
@@ -633,6 +640,36 @@ tr:last-child td {
   color: var(--gr-muted);
 }
 
+.contact-hero {
+  display: grid;
+  min-height: calc(100vh - 72px - 133px);
+  align-items: center;
+  padding: 88px 0;
+}
+
+.contact-hero-card h3 {
+  margin: 16px 0 10px;
+  font-size: 1.35rem;
+}
+
+.contact-hero-card p {
+  color: var(--gr-muted);
+  line-height: 1.65;
+}
+
+.contact-email {
+  display: inline-flex;
+  margin: 6px 0 8px;
+  color: var(--gr-primary-dark);
+  font-size: clamp(1.18rem, 3vw, 1.55rem);
+  font-weight: 850;
+  overflow-wrap: anywhere;
+}
+
+.contact-email:hover {
+  color: var(--gr-primary);
+}
+
 .connect-placeholder {
   display: grid;
   min-height: 58vh;
@@ -688,6 +725,11 @@ tr:last-child td {
 
   .hero {
     padding-top: 54px;
+  }
+
+  .contact-hero {
+    min-height: auto;
+    padding: 64px 0;
   }
 
   h1 {
