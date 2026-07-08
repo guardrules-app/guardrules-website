@@ -122,7 +122,7 @@ export const landingFaqs: FAQItem[] = [
 
 export const featureSections = [
   {
-    eyebrow: "Inventory guard rules",
+    badge: "Inventory guard rules",
     heading: "Create rules around product inventory",
     copy: "Set inventory thresholds that decide when a guard should run. For example, pause ads when inventory is less than or equal to 0, or resume ads when inventory becomes greater than 0.",
     bullets: [
@@ -133,7 +133,7 @@ export const featureSections = [
     ]
   },
   {
-    eyebrow: "Product targeting",
+    badge: "Product targeting",
     heading: "Control which products each guard protects",
     copy: "Apply rules across your catalog or focus only on specific products.",
     bullets: [
@@ -144,25 +144,25 @@ export const featureSections = [
     ]
   },
   {
-    eyebrow: "Meta ad actions",
+    badge: "Meta ad actions",
     heading: "Take action on Meta campaigns automatically",
     copy: "GuardRules helps you pause or resume Meta campaigns, ad sets, or ads based on inventory changes.",
     bullets: ["Pause campaigns", "Resume campaigns", "Pause ad sets", "Resume ad sets", "Pause ads", "Resume ads"]
   },
   {
-    eyebrow: "Notifications",
+    badge: "Notifications",
     heading: "Stay informed when something changes",
     copy: "Use notification actions to keep your team aware when guards trigger, without checking inventory manually all day.",
     bullets: ["Inventory-based alerts", "Rule trigger updates", "Action status visibility"]
   },
   {
-    eyebrow: "Guard activity",
+    badge: "Guard activity",
     heading: "Understand what happened and why",
     copy: "GuardRules should make automation transparent. Show merchants a clear history of triggered rules and actions.",
     bullets: ["Guard trigger history", "Action results", "Rule status", "Easier debugging"]
   },
   {
-    eyebrow: "Shopify-focused setup",
+    badge: "Shopify-focused setup",
     heading: "Designed for Shopify merchants",
     copy: "GuardRules is built around Shopify product inventory and the way merchants actually manage ad traffic.",
     bullets: ["Shopify app installation", "Product inventory monitoring", "Simple merchant-friendly UI", "No complex setup required"]

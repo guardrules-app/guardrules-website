@@ -6,32 +6,35 @@ export function HeroSection() {
     <section className="hero">
       <div className="container hero-grid">
         <div>
-          <span className="eyebrow">Inventory-based Meta ad protection</span>
-          <h2>Protect your Shopify ad spend with inventory-based guard rules.</h2>
+          <span className="badge">Protect your advertising revenue</span>
+          <h2>Protect your Shopify Ad Spend</h2>
           <p className="hero-copy">
-            GuardRules monitors your Shopify inventory and helps automate Meta ad actions, so you do not waste budget
-            promoting products that cannot sell.
+            Automatically pause and resume Meta ads based on inventory, so you
+            never waste budget promoting out-of-stock products.
           </p>
-          <div className="hero-actions">
-            <Link className="button button-primary" href={installHref}>
-              Install GuardRules
-            </Link>
-            <Link className="button button-secondary" href="#how-it-works">
-              See how it works
-            </Link>
-          </div>
           <ul className="hero-bullets">
             {heroBullets.map((bullet) => (
               <li key={bullet}>{bullet}</li>
             ))}
           </ul>
+
+          <div className="hero-actions">
+            <Link className="button button-primary" href={installHref}>
+              Install Guardrules
+            </Link>
+            <Link className="button button-secondary" href="#how-it-works">
+              See how it works
+            </Link>
+          </div>
         </div>
         <div className="hero-panel" aria-label="GuardRules automation example">
           <div className="automation-card">
             <div className="automation-row">
               <div>
                 <div className="automation-label">Inventory condition</div>
-                <div className="automation-value">Stock is less than or equal to 0</div>
+                <div className="automation-value">
+                  Stock is less than or equal to 0
+                </div>
               </div>
               <span className="status-pill">Matched</span>
             </div>

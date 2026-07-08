@@ -3,20 +3,27 @@
 import { FormEvent, useState } from "react";
 
 function normalizeShopDomain(value: string) {
-  const trimmed = value.trim().toLowerCase().replace(/^https?:\/\//, "").replace(/\/.*$/, "");
+  const trimmed = value
+    .trim()
+    .toLowerCase()
+    .replace(/^https?:\/\//, "")
+    .replace(/\/.*$/, "");
 
   if (!trimmed) {
     return null;
   }
 
-  const domain = trimmed.endsWith(".myshopify.com") ? trimmed : `${trimmed}.myshopify.com`;
+  const domain = trimmed.endsWith(".myshopify.com")
+    ? trimmed
+    : `${trimmed}.myshopify.com`;
   const isValid = /^[a-z0-9][a-z0-9-]*\.myshopify\.com$/.test(domain);
 
   return isValid ? domain : null;
 }
 
 function getShopifyAppUrl() {
-  const appUrl = process.env.NEXT_PUBLIC_SHOPIFY_APP_URL || "https://app.guardrules.com";
+  const appUrl =
+    process.env.NEXT_PUBLIC_SHOPIFY_APP_URL || "https://app.guardrules.com";
 
   return appUrl.replace(/\/$/, "");
 }
@@ -31,7 +38,9 @@ export function StoreConnectSection() {
     const domain = normalizeShopDomain(shop);
 
     if (!domain) {
-      setError("Enter a valid Shopify store URL, such as your-store.myshopify.com.");
+      setError(
+        "Enter a valid Shopify store URL, such as your-store.myshopify.com.",
+      );
       return;
     }
 
@@ -45,11 +54,11 @@ export function StoreConnectSection() {
       <div className="container">
         <div className="connect-card">
           <div>
-            <span className="eyebrow">Secure Shopify installation</span>
+            <span className="badge">Secure Shopify installation</span>
             <h2>Install GuardRules in seconds</h2>
             <p>
-              Enter your Shopify store URL to start installation. GuardRules will send you to the secure Shopify app
-              installation flow.
+              Enter your Shopify store URL to start installation. GuardRules
+              will send you to the secure Shopify app installation flow.
             </p>
           </div>
           <form className="connect-form" onSubmit={handleSubmit} noValidate>

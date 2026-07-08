@@ -37,9 +37,9 @@ export const plans: Plan[] = [
 ];
 
 export const pricingCtas: Record<Plan["name"], string> = {
-  Free: "Start free",
-  Starter: "Choose Starter",
-  Advanced: "Choose Advanced"
+  Free: "Select plan",
+  Starter: "Select plan",
+  Advanced: "Select plan"
 };
 
 export const comparisonRows = [

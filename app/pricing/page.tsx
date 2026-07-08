@@ -6,7 +6,7 @@ import { plans } from "@/constants/pricing";
 export const metadata: Metadata = {
   title: "Pricing — GuardRules",
   description:
-    "Simple GuardRules pricing for Shopify stores. Start free and upgrade when you need more inventory-based guard rules."
+    "Simple GuardRules pricing for Shopify stores. Start free and upgrade when you need more inventory-based guard rules.",
 };
 
 export default function PricingPage() {
@@ -15,36 +15,12 @@ export default function PricingPage() {
       <section className="hero">
         <div className="container hero-grid">
           <div>
-            <span className="eyebrow">Pricing</span>
-            <h2>Simple pricing for every Shopify store.</h2>
+            <span className="badge">Plans & Pricing</span>
+            <h2>Simple pricing for every Shopify store</h2>
             <p className="hero-copy">
-              Start free, then upgrade when you need more guard rules for your store. Prices are in USD/month.
+              Start free, then upgrade when you need more guard rules for your
+              store. Prices are in USD/month.
             </p>
-          </div>
-          <div className="hero-panel" aria-label="GuardRules pricing summary">
-            <div className="automation-card">
-              <div className="automation-row">
-                <div>
-                  <div className="automation-label">Free</div>
-                  <div className="automation-value">1 guard included</div>
-                </div>
-                <span className="status-pill">$0/mo</span>
-              </div>
-              <div className="automation-row">
-                <div>
-                  <div className="automation-label">Starter</div>
-                  <div className="automation-value">5 guards for small stores</div>
-                </div>
-                <span className="status-pill">$4.99/mo</span>
-              </div>
-              <div className="automation-row">
-                <div>
-                  <div className="automation-label">Advanced</div>
-                  <div className="automation-value">20 guards for growing stores</div>
-                </div>
-                <span className="status-pill">$12.99/mo</span>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -56,9 +32,12 @@ export default function PricingPage() {
               <PricingCard key={plan.name} plan={plan} />
             ))}
           </div>
-          <p className="hero-copy" style={{ marginTop: 22, fontSize: "1rem" }}>
-            All plans include unlimited product protection. Guard limits control how many automation rules you can
-            create.
+          <p
+            className="hero-copy"
+            style={{ marginTop: 22, fontSize: "0.75rem" }}
+          >
+            Guard limits control how many automation rules you can create.
+            Prices are in USD/month.
           </p>
         </div>
       </section>

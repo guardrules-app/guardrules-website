@@ -16,25 +16,33 @@ const siteThemeVariables: SiteThemeVariables = {
   "--gr-bg": siteTheme.colors.background,
   "--gr-bg-soft": siteTheme.colors.backgroundSoft,
   "--gr-card": siteTheme.colors.card,
-  "--gr-shadow": siteTheme.colors.shadow
+  "--gr-shadow": siteTheme.colors.shadow,
 };
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://guardrules.com"),
   title: {
     default: "GuardRules",
-    template: "%s"
+    template: "%s",
   },
-  description: "GuardRules helps Shopify merchants protect ad spend with inventory-based Meta ad automation."
+  description:
+    "GuardRules helps Shopify merchants protect ad spend with inventory-based Meta ad automation.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
-  children
+  children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-scroll-behavior="smooth" style={siteThemeVariables as CSSProperties}>
+    <html
+      lang="en"
+      data-scroll-behavior="smooth"
+      style={siteThemeVariables as CSSProperties}
+    >
       <body>{children}</body>
     </html>
   );

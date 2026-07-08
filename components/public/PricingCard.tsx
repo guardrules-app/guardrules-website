@@ -17,7 +17,7 @@ export function PricingCard({ plan }: PricingCardProps) {
           <h3>{plan.name}</h3>
           <p>{plan.description}</p>
         </div>
-        {plan.badge ? <span className="pricing-badge">{plan.badge}</span> : null}
+        {plan.badge ? <span className="badge">{plan.badge}</span> : null}
       </div>
       <div className="price">
         <strong>{price}</strong>
@@ -28,7 +28,10 @@ export function PricingCard({ plan }: PricingCardProps) {
           <li key={feature}>{feature}</li>
         ))}
       </ul>
-      <Link className={`button ${isHighlighted ? "button-primary" : "button-secondary"}`} href={installHref}>
+      <Link
+        className={`button ${isHighlighted ? "button-primary" : "button-secondary"}`}
+        href={installHref}
+      >
         {pricingCtas[plan.name]}
       </Link>
     </article>

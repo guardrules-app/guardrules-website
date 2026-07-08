@@ -9,7 +9,8 @@ import { howItWorksSteps, landingFaqs } from "@/constants/siteContent";
 
 export const metadata: Metadata = {
   title: "GuardRules — Inventory-Based Ad Protection for Shopify Stores",
-  description: "GuardRules helps Shopify merchants pause, resume, and monitor Meta ads based on product inventory rules."
+  description:
+    "GuardRules helps Shopify merchants pause, resume, and monitor Meta ads based on product inventory rules.",
 };
 
 export default function HomePage() {
@@ -17,7 +18,7 @@ export default function HomePage() {
     <PublicLayout>
       <HeroSection />
       {/* <StoreConnectSection /> */}
-{/* 
+      {/* 
       <section className="section">
         <div className="container">
           <SectionHeading
@@ -75,15 +76,17 @@ export default function HomePage() {
       </section> */}
 
       <FAQSection faqs={landingFaqs} />
-            <section className="section">
+      <section className="section">
         <div className="container pricing-preview">
           <div className="pricing-row">
             <div>
-              <span className="eyebrow">Pricing preview</span>
-              <h2>Start free, upgrade when you need more guards.</h2>
+              <span className="badge">Plans & Pricing</span>
+              <h2 className="cta-heading">
+                Start with 1 free guard. Upgrade when you need more.
+              </h2>
               <p>
-                Every plan includes unlimited product protection. Guard limits control how many automation rules you can
-                create.
+                Every plan includes all core features. Usage limits depend on
+                your selected plan.
               </p>
             </div>
             <Link className="button button-secondary" href="/pricing">

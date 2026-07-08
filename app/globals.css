@@ -199,7 +199,7 @@ summary:focus-visible {
   align-items: center;
 }
 
-.eyebrow {
+.badge {
   display: inline-flex;
   align-items: center;
   width: fit-content;
@@ -229,9 +229,9 @@ h1,
   letter-spacing: 0;
 }
 
-.eyebrow + h1,
-.eyebrow + h2,
-.eyebrow + h3 {
+.badge + h1,
+.badge + h2,
+.badge + h3 {
   margin-top: 0;
 }
 
@@ -255,7 +255,7 @@ h1,
 .check-list {
   display: grid;
   gap: 12px;
-  margin: 0;
+  margin-bottom: 20px;
   padding: 0;
   list-style: none;
 }
@@ -312,7 +312,7 @@ h1,
 }
 
 .status-pill,
-.pricing-badge {
+.badge {
   border-radius: 999px;
   background: var(--gr-primary-soft);
   color: var(--gr-primary-dark);
@@ -320,6 +320,30 @@ h1,
   font-size: 0.78rem;
   font-weight: 850;
   white-space: nowrap;
+}
+
+.contact-hero {
+  min-height: calc(100vh - 72px); /* adjust to your header height */
+  display: flex;
+  align-items: center;
+}
+
+.contact-hero .container {
+  max-width: 720px;
+}
+
+.contact-email {
+  display: inline-block;
+  margin-top: 2rem;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 700;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+
+.cta-heading{
+  margin-bottom: 0;
 }
 
 .section {
@@ -339,7 +363,7 @@ h1,
 
 .section-heading h2 {
   margin-bottom: 12px;
-  font-size: clamp(2rem, 3.4vw, 2.9rem);
+  font-size: 2.25rem;
   line-height: 1.08;
   letter-spacing: 0;
 }

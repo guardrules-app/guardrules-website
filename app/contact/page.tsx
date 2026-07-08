@@ -3,34 +3,24 @@ import { PublicLayout } from "@/components/public/PublicLayout";
 
 export const metadata: Metadata = {
   title: "Contact — GuardRules",
-  description: "Contact GuardRules support."
+  description: "Get in touch with the GuardRules team.",
 };
 
 export default function ContactPage() {
   return (
     <PublicLayout>
       <section className="hero contact-hero">
-        <div className="container hero-grid">
-          <div>
-            <span className="eyebrow">Contact</span>
-            <h2>Contact GuardRules.</h2>
-            <p className="hero-copy">Need help with GuardRules? Email support and we will get back to you.</p>
-          </div>
-          <div className="hero-panel contact-hero-card" aria-label="GuardRules contact email">
-            <div className="automation-card">
-              <div>
-                <span className="pricing-badge">Support</span>
-                <h3>Email support</h3>
-                <p>For support, billing, privacy, or app questions.</p>
-              </div>
-              <a className="contact-email" href="mailto:support@guardrules.com">
-                support@guardrules.com
-              </a>
-              <a className="button button-primary" href="mailto:support@guardrules.com">
-                Email support
-              </a>
-            </div>
-          </div>
+        <div className="container">
+          <span className="badge">Contact</span>
+
+          <h1>We're here to help.</h1>
+
+          <p className="hero-copy">
+            Have a question about GuardRules or need assistance? Email us and
+            we'll get back to you as soon as possible.
+          </p>
+
+          <div className="contact-email">support@guardrules.com</div>
         </div>
       </section>
     </PublicLayout>
