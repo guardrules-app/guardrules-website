@@ -6,14 +6,14 @@ import { plans } from "@/constants/pricing";
 export const metadata: Metadata = {
   title: "Pricing — GuardRules",
   description:
-    "Simple GuardRules pricing for Shopify stores. Start free and upgrade when you need more inventory-based guard rules.",
+    "Simple Guard Rules pricing for Shopify stores. Start free and upgrade when you need more inventory-based guard rules.",
 };
 
 export default function PricingPage() {
   return (
     <PublicLayout>
       <section className="hero">
-        <div className="container hero-grid">
+        {/* <div className="container hero-grid">
           <div>
             <span className="badge">Plans & Pricing</span>
             <h2>Simple pricing for every Shopify store</h2>
@@ -22,6 +22,16 @@ export default function PricingPage() {
               store. Prices are in USD/month.
             </p>
           </div>
+        </div> */}
+        <div className="features-heading">
+          <span className="page-heading-badge">Plans & Pricing</span>
+          <h2 className="heading-title">
+            Simple pricing for every Shopify store
+          </h2>
+          <p>
+            Start free, then upgrade when you need more guard rules for your
+            store. Prices are in USD/month.
+          </p>
         </div>
       </section>
 

@@ -5,7 +5,7 @@ import { FeatureCard } from "@/components/public/FeatureCard";
 import { HeroSection } from "@/components/public/HeroSection";
 import { PublicLayout } from "@/components/public/PublicLayout";
 import { SectionHeading } from "@/components/public/SectionHeading";
-import { howItWorksSteps, landingFaqs } from "@/constants/siteContent";
+import { featureSections, landingFaqs } from "@/constants/siteContent";
 
 export const metadata: Metadata = {
   title: "GuardRules — Inventory-Based Ad Protection for Shopify Stores",
@@ -36,12 +36,17 @@ export default function HomePage() {
       <section className="section" id="how-it-works">
         <div className="container">
           <SectionHeading
-            title="Simple rules. Automatic protection."
-            description="Install GuardRules, choose the products to protect, then let inventory-based rules handle the action."
+            title="Key Features"
+            description="GuardRules gives Shopify merchants checkout protection, custom messaging, fraud-prevention controls, and clear visibility into rule activity."
           />
           <div className="grid grid-3 steps">
-            {howItWorksSteps.map((step, index) => (
-              <FeatureCard key={step.title} {...step} index={index + 1} />
+            {featureSections.map((feature, index) => (
+              <FeatureCard
+                key={feature.heading}
+                title={feature.heading}
+                copy={feature.copy}
+                index={index + 1}
+              />
             ))}
           </div>
         </div>
@@ -82,7 +87,7 @@ export default function HomePage() {
             <div>
               <span className="badge">Plans & Pricing</span>
               <h2 className="cta-heading">
-                Start with 1 free guard. Upgrade when you need more.
+                Start with 2 free guard. Upgrade when you need more.
               </h2>
               <p>
                 Every plan includes all core features. Usage limits depend on

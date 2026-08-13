@@ -22,7 +22,11 @@ export function CTASection({
             <h2 className="cta-heading">{title}</h2>
             {description ? <p>{description}</p> : null}
           </div>
-          <Link className="button button-primary" href={buttonHref}>
+          <Link
+            className="button button-primary"
+            href={buttonHref}
+            target="_blank"
+          >
             {buttonLabel}
           </Link>
         </div>

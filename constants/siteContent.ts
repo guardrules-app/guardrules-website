@@ -11,7 +11,7 @@ export type FAQItem = {
   answer: ReactNode;
 };
 
-export const installHref = "https://app.guardrules.com";
+export const installHref = "https://apps.shopify.com/guard-rules";
 
 export const navLinks = [
   { label: "Features", href: "/features" },
@@ -103,69 +103,78 @@ export const useCases: FeatureItem[] = [
 
 export const landingFaqs: FAQItem[] = [
   {
-    question: "Which ad platform does GuardRules support?",
-    answer: "GuardRules currently supports Meta ads."
+    question: "What does Guard Rules help me control?",
+    answer:
+      "Guard Rules helps you block unwanted discount codes, show custom checkout messages, and apply flexible protection rules across your store."
   },
   {
-    question: "Can I choose which products a guard watches?",
-    answer: "Yes. You can apply guards to all products, selected products, or exclude specific products."
+    question: "Can I show custom messages at checkout?",
+    answer:
+      "Yes. You can display a clear validation message when a checkout rule is triggered, so shoppers understand why a code or condition was rejected."
   },
   {
-    question: "What actions can a guard take?",
-    answer: "A guard can pause, resume, or notify teams based on the inventory rules you create."
+    question: "What kinds of rules can I create?",
+    answer:
+      "You can create rules based on products, collections, countries, IP addresses, customers, discount codes, and other checkout conditions."
   },
   {
-    question: "Is GuardRules built for Shopify?",
-    answer: "Yes. GuardRules is designed for Shopify merchants and Shopify product inventory."
+    question: "Can I block or allow specific locations and IPs?",
+    answer:
+      "Yes. Fraud-prevention rules can block or whitelist IP addresses and countries with flexible conditions."
+  },
+  {
+    question: "Is Guard Rules built for Shopify checkout?",
+    answer:
+      "Yes. The app is designed for Shopify stores and uses checkout-focused rules to protect margins and improve control."
   }
 ];
 
 export const featureSections = [
   {
-    badge: "Inventory guard rules",
-    heading: "Create rules around product inventory",
-    copy: "Set inventory thresholds that decide when a guard should run. For example, pause ads when inventory is less than or equal to 0, or resume ads when inventory becomes greater than 0.",
+    badge: "Discount code control",
+    heading: "Block unwanted discount codes",
+    copy: "Create rules that stop discount codes from being used when they should not apply at checkout.",
     bullets: [
-      "Less than or equal inventory checks",
-      "Greater than or equal inventory checks",
-      "Flexible thresholds",
-      "Any/All logic for grouped conditions"
+      "Reject unwanted discount codes",
+      "Protect store margins",
+      "Simple rule-based checkout control",
+      "Predictable behavior for shoppers"
     ]
   },
   {
-    badge: "Product targeting",
-    heading: "Control which products each guard protects",
-    copy: "Apply rules across your catalog or focus only on specific products.",
+    badge: "Checkout validation",
+    heading: "Show custom messages at checkout",
+    copy: "Display a clear validation message when a checkout rule is triggered so customers understand why the code or condition was rejected.",
     bullets: [
-      "All products",
-      "Only selected products",
-      "Exclude selected products",
-      "Useful for best sellers, seasonal products, or limited stock items"
+      "Custom checkout messaging",
+      "Less confusion for shoppers",
+      "Better support for your team",
+      "Clear rule-trigger feedback"
     ]
   },
   {
-    badge: "Meta ad actions",
-    heading: "Take action on Meta campaigns automatically",
-    copy: "GuardRules helps you pause or resume Meta campaigns, ad sets, or ads based on inventory changes.",
-    bullets: ["Pause campaigns", "Resume campaigns", "Pause ad sets", "Resume ad sets", "Pause ads", "Resume ads"]
+    badge: "Fraud prevention",
+    heading: "Block or allow IPs and countries",
+    copy: "Use flexible rules to block or whitelist IP addresses and countries based on where the traffic is coming from.",
+    bullets: ["IP address rules", "Country-based rules", "Block or allow specific locations", "Flexible rule logic"]
   },
   {
-    badge: "Notifications",
-    heading: "Stay informed when something changes",
-    copy: "Use notification actions to keep your team aware when guards trigger, without checking inventory manually all day.",
-    bullets: ["Inventory-based alerts", "Rule trigger updates", "Action status visibility"]
+    badge: "Rule targeting",
+    heading: "Target products, collections, and customers",
+    copy: "Build checkout rules around products, collections, customers, discount codes, and other store conditions.",
+    bullets: ["Product-based rules", "Collection-based rules", "Customer conditions", "Discount-code conditions"]
   },
   {
-    badge: "Guard activity",
-    heading: "Understand what happened and why",
-    copy: "GuardRules should make automation transparent. Show merchants a clear history of triggered rules and actions.",
-    bullets: ["Guard trigger history", "Action results", "Rule status", "Easier debugging"]
+    badge: "Checkout control",
+    heading: "Keep checkout behavior predictable",
+    copy: "Make sure the store follows your policies with rules that are easy to understand and manage.",
+    bullets: ["Clear checkout outcomes", "Policy control", "Consistent validation", "Storewide rule management"]
   },
   {
-    badge: "Shopify-focused setup",
-    heading: "Designed for Shopify merchants",
-    copy: "GuardRules is built around Shopify product inventory and the way merchants actually manage ad traffic.",
-    bullets: ["Shopify app installation", "Product inventory monitoring", "Simple merchant-friendly UI", "No complex setup required"]
+    badge: "Shopify setup",
+    heading: "Built for Shopify checkout",
+    copy: "Guard Rules is designed for Shopify merchants who want simple control over checkout behavior and store protection.",
+    bullets: ["Shopify app installation", "Shopify-focused workflow", "Simple merchant-friendly UI", "No complex setup required"]
   }
 ] as const;
 

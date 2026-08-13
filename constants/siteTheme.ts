@@ -2,7 +2,7 @@ export const siteTheme = {
   brandName: "GuardRules",
   colors: {
     primary: "#4CBF3F",
-    primaryDark: "#063B6D",
+    primaryDark: "#1e6099",
     primaryLight: "#BDECB5",
     primarySoft: "#F0FAEF",
     text: "#0A2942",

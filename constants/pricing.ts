@@ -17,23 +17,23 @@ export const plans: Plan[] = [
     price: 0,
     trialDuration: 0,
     description: "Basic free plan",
-    features: ["Up to 1 guard allowed", "Unlimited products protection", "Chat support"]
+    features: ["Up to 2 guard allowed", "Discount / Checkout Validation", "Unlimited IP / Country Blocking", "Store Protection", "chat support"],
   },
   {
     name: "Starter",
     price: 4.99,
     trialDuration: 0,
     description: "Perfect for small stores",
-    features: ["Up to 5 guards allowed", "Unlimited products protection", "Chat support"],
+    features: ["Up to 15 guards allowed",  "Discount / Checkout Validation", "Unlimited IP / Country Blocking", "Store Protection", "chat support"],
     badge: "Most Popular"
   },
-  {
-    name: "Advanced",
-    price: 12.99,
-    trialDuration: 0,
-    description: "For growing stores with more automation needs",
-    features: ["Up to 20 guards allowed", "Unlimited products protection", "Chat support"]
-  }
+  // {
+  //   name: "Advanced",
+  //   price: 12.99,
+  //   trialDuration: 0,
+  //   description: "For growing stores with more automation needs",
+  //   features: ["Up to 20 guards allowed", "Unlimited products protection", "Chat support"]
+  // }
 ];
 
 export const pricingCtas: Record<Plan["name"], string> = {
